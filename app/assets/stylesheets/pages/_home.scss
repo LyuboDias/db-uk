@@ -1,24 +1,69 @@
-// Specific CSS for your home-page
+html,body
+{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $body-font;
+  background-color: $gray;
+  color: $red;
+}
 .wrap {
   text-align: center;
-  color: rgb(162,30,69);
-  background: rgb(22,22,22);
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   padding-top: 200px;
-  font-family: 'Audiowide', cursive;
-}
-h1 {
-  font-size: 6em;
+  h1 {
+    font-size: 10em;
     font-family: 'Audiowide', cursive;
-
+  }
+  .web {
+    font-size: 4em;
+    font-family: Monoton;
+    // font-family: 'Audiowide', cursive;
+  }
 }
-.web {
-  font-size: 4em;
-    font-family: 'Audiowide', cursive;
-
+// --------------scrolling text-----------------
+.text-wrap {
+  display: flex;
+  width: 100%;
 }
-p {
-  font-size: 3em;
-  opacity: 0.5;
+.marquee {
+  width: 100%;
+  line-height: 40px;
+  background-color: $gray;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+}
+.marquee p {
+  margin: auto 0;
+  font-size: 40px;
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+  i {
+    margin: auto 20px;
+  }
+}
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+// --------------------------
+// ------back to top---------------------------
+.back-to-top {
+font-size: 2em;
+z-index: 22;
+position: fixed;
+bottom: 10px;
+right: 20px;
 }
