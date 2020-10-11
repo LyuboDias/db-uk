@@ -4,23 +4,56 @@
 <!-- ----------scrolling text------ -->
 <div class="text-wrap">
     <div class="marquee">
-      <p> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i> <i class="fab fa-react"></i> <i class="fab fa-sass"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-js"></i> <i class="fab fa-git"></i> <i class="fab fa-github-alt"></i>  SQL </p>
+      <p> <%= image_tag "rails-logo.png", class: "rails-logo" %> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i> <i class="fab fa-react"></i> <i class="fab fa-sass"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-js"></i> <i class="fab fa-git"></i> <i class="fab fa-github-alt"></i>  SQL </p>
     </div>
 </div>
 <br>
 <br>
 <!-- -------main links---- -->
-<ul>
-  <li><a href="#bio">Bio</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#contacts">Contacts</a></li>
-  <li><%= link_to 'Music', music_pages_path %></li>
-</ul>
+<div class="main-links" data-aos="fade-down" data-aos-duration="3000">
+  <ul>
+    <span class="test" >Test</span>
+    <li><a href="#bio">Bio</a></li>
+    <li><a href="#projects" >Projects</a></li>
+    <li><a href="#contacts" class="by-hover">Contacts</a></li>
+    <li> <div class="by-hover"><%= link_to 'Music' , music_pages_path %><p class="by">by Antoan Dias</p></div> </li>
+
+  </ul>
+</div>
 <!-- ----banner------- -->
-<div class="wrap">
-  <h1> <strong>db</strong></h1>
-  <h6 class="web">web</h6>
-  <p>Hi my name si Lyubomir Dias, a Junior Web Developer</p>
+<div class="wrap" data-aos="zoom-in" data-aos-duration="3000">
+
+  <h1><strong>db</strong></h1>
+
+    <h6 class="web">web</h6>
+
+</div>
+<!-- ---empty space div------ -->
+<div class="empty">
+  <div data-aos="fade-right"><i class="fas fa-chevron-down"></i></div>
+  <div data-aos="fade-down"><i class="fas fa-chevron-down"></i></div>
+  <div data-aos="fade-left"><i class="fas fa-chevron-down"></i></div>
+
+</div>
+   <p><a href="#" class="glitch" data-glitch="Resume">Resume</a></p>
+
+<!-- ----text animation--- -->
+<div class="animation">
+  <div class="bottom-container">
+    Hello, there!
+  </div>
+
+  <div class="top-container">
+    Hello, there!
+  </div>
+</div>
+
+<!-- ----------------------- -->
+<div class="wrap-info">
+
+
+  <h3>Hi my name si Lyubomir Dias, a Junior Web Developer</h3>
+  <br>
   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium earum odit veritatis necessitatibus dolore harum dolor fugiat minus. Possimus culpa nobis exercitationem ratione repellendus eaque, iste praesentium consequuntur laboriosam at, dolore atque assumenda rem tempore enim voluptatem, fuga, harum incidunt accusamus ea. Fugit veniam architecto, rem facere recusandae! Dolorem!</p>
   <a href="http://airchef2020.herokuapp.com/">AirChef</a>
   <a href="http://www.yourfestipal.com/">FestiPal</a>
@@ -29,7 +62,7 @@
   <br>
   <br>
   <!-- ----resume------- -->
-  <p><a href="#">Resume</a></p>
+
   <br>
   <br>
   <!-- ---fav resources---- -->
@@ -42,16 +75,14 @@
   </ul>
 </div>
 
-
-
   <!-- ----------bio-------------- -->
 
-<div id="bio">
+<div id="bio" class="wrap-bio">
   <p>BIO ---- Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Accusamus alias voluptates laudantium! Delectus nulla eos, aperiam odit quibusdam inventore placeat?</p>
 </div>
 
 <!-- ------projects------ -->
-<div id="projects">
+<div id="projects" class="wrap-projects">
   <ul>
   <a href="http://airchef2020.herokuapp.com/">AirChef</a>
   <a href="http://www.yourfestipal.com/">FestiPal</a>
@@ -61,7 +92,7 @@
 </div>
 
 <!-- ---contacts----- -->
-<div id="contacts">
+<div id="contacts" class="wrap-contacts">
   <p>phone - 029839832</p>
   <p>email - jhbdhjsadhjb</p>
 </div>

@@ -10,26 +10,102 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $body-font;
-  background-color: $gray;
-  color: $red;
+  font-family: 'Roboto', sans-serif;;
+  background-color: #121212;
+  color: $blue;
 }
+// -----text colored-------
+.test {
+  background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+// -----main links -------
+.by-hover:hover p {
+  transition: .5s;
+  display: block;
+}
+.by {
+  display: none;
+  position: absolute;
+  font-size: 16px;
+  margin: 0 auto;
+  color: $red;
+
+}
+.main-links {
+  text-align: center;
+  ul {
+    list-style-type: none;
+    li, span{
+      display: inline-block;
+      text-align: center;
+      padding: 14px 26px;
+      text-decoration: none;
+      font-size: 20px;
+      a {
+        transition: .5s;
+        text-decoration: none;
+        &:hover {
+        text-shadow: 0px 0px 30px rgb(61,230,254);
+        }
+      }
+    }
+  }
+}
+.empty {
+  height: 200px;
+  color: $green;
+  font-size: 34px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .wrap {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("coding-keyboard.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   text-align: center;
   width: 100%;
-  // height: 100vh;
-  padding-top: 200px;
+  padding-top: 100px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   h1 {
-    font-size: 10em;
+    font-size: 12em;
     font-family: 'Audiowide', cursive;
+    color: $red;
   }
   .web {
-    font-size: 4em;
+    font-size: 4rem;
     font-family: Monoton;
+    color: $red;
     // font-family: 'Audiowide', cursive;
   }
 }
+.wrap-info {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("coding-laptop.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-top: 100px;
+}
+
 // --------------scrolling text-----------------
+.rails-logo {
+  width: 35px;
+  height: 40px;
+}
 .text-wrap {
   display: flex;
   width: 100%;
@@ -37,7 +113,7 @@ body {
 .marquee {
   width: 100%;
   line-height: 40px;
-  background-color: $gray;
+  background-color: #121212;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
@@ -45,6 +121,7 @@ body {
   right: 0;
 }
 .marquee p {
+  color: $red;
   margin: auto 0;
   font-size: 40px;
   display: inline-block;
@@ -67,3 +144,102 @@ position: fixed;
 bottom: 10px;
 right: 20px;
 }
+// ------hello there text animation----
+.animation {
+  position: relative;
+  height: 50vh;
+}
+.bottom-container,
+.top-container {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  // top: 10px;
+  // left: 50px;
+  padding: 1vw;
+  font-size: 24px;
+}
+
+.bottom-container {
+  color: $red;
+}
+
+.top-container {
+  background-color: $red;
+  color: $blue;
+  clip-path: circle(10% at 85% 50%);
+  animation: circleMove 10s ease-in-out infinite;
+}
+
+@keyframes circleMove {
+  0%, 100% {
+    clip-path: circle(10% at 85% 50%);
+  }
+  50% {
+    clip-path: circle(10% at 15% 50%);
+  }
+}
+
+// ----- glitch text-----
+.glitch {
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: $blue;
+  letter-spacing: 5px;
+
+  &:before, &:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+  } &:after {
+    color: $red;
+    z-index: -2;
+  } &:before {
+    color: $blue;
+    z-index: -1;
+  }
+  &:hover {
+    &:before {
+      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
+    }
+    &:after {
+      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
+    }
+  }
+}
+
+
+
+@keyframes glitch {
+  0% {
+    transform: translate(0)
+  }
+  20% {
+    transform: translate(-5px, 5px)
+  }
+  40% {
+    transform: translate(-5px, -5px)
+  }
+  60% {
+    transform: translate(5px, 5px)
+  }
+  80% {
+    transform: translate(5px, -5px)
+  }
+  to {
+    transform: translate(0)
+  }
+}
+// --------------------------------
