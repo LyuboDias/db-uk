@@ -1,82 +1,264 @@
 <!-- --back to the top-------- -->
-  <a href="#" class="back-to-top"><i class="fas fa-angle-double-up"></i></a>
+  <a href="#" class="back-to-top"><i class="fas fa-level-up-alt"></i></a>
 
 <!-- ----------scrolling text------ -->
 <div class="text-wrap">
     <div class="marquee">
-      <p> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i> <i class="fab fa-react"></i> <i class="fab fa-sass"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-js"></i> <i class="fab fa-git"></i> <i class="fab fa-github-alt"></i>  SQL </p>
+      <p> <%= image_tag "rails-logo.png", class: "rails-logo" %> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i> <i class="fab fa-react"></i> <i class="fab fa-sass"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-js"></i> <i class="fab fa-git"></i> <i class="fab fa-github-alt"></i>  SQL </p>
     </div>
 </div>
 <br>
 <br>
 <!-- -------main links---- -->
-<ul>
-  <li><a href="#bio">Bio</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#contacts">Contacts</a></li>
-  <li><%= link_to 'Music', music_pages_path %></li>
-</ul>
-<!-- ----banner------- -->
-<div class="wrap">
-  <h1> <strong>db</strong></h1>
-  <h6 class="web">web</h6>
-  <p>Hi my name si Lyubomir Dias, a Junior Web Developer</p>
-  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium earum odit veritatis necessitatibus dolore harum dolor fugiat minus. Possimus culpa nobis exercitationem ratione repellendus eaque, iste praesentium consequuntur laboriosam at, dolore atque assumenda rem tempore enim voluptatem, fuga, harum incidunt accusamus ea. Fugit veniam architecto, rem facere recusandae! Dolorem!</p>
-  <a href="http://airchef2020.herokuapp.com/">AirChef</a>
-  <a href="http://www.yourfestipal.com/">FestiPal</a>
-  <a href="https://www.bisimpact.com/">BisImpact</a>
-  <a href="http://www.nessycreativitycrafts.com/">NCC</a>
-  <br>
-  <br>
-  <!-- ----resume------- -->
-  <p><a href="#">Resume</a></p>
-  <br>
-  <br>
-  <!-- ---fav resources---- -->
-  <h4>Favorite Resource</h4>
+
+
+<div class="main-links" data-aos="fade-down" data-aos-duration="3000">
   <ul>
-    <li>YouTube</li>
-    <li>Free Code Camp</li>
-    <li>Udemy</li>
-    <li>W3School</li>
+    <!-- <span class="test" >Test</span> -->
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#bio">Bio</a></li>
+    <li><a href="#projects" >Projects</a></li>
+    <li><a href="#contacts" class="by-hover">Contacts</a></li>
   </ul>
+</div>
+<!-- ----banner------- -->
+<div class="wrap" data-aos="zoom-in" data-aos-duration="3000">
+  <div class="by-hover1 db-music1 text-left">
+      <%= link_to image_tag("db-music-logo.png", class: "db-web-logo by-hover1"), music_pages_path %><p class="by-music1">by Antoan Dias</p>
+  </div>
+  <h1 data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"><strong>db</strong></h1>
+
+  <div id="app">
+    <div id="wrapper">
+      <h1 class="glitch web" data-text="web">web</h1>
+    </div>
+  </div>
+  <!------- media links -->
+  <div class="media-links mt-3">
+    <ul class="media-links-ul">
+      <li class="media-links-li"><a href="https://www.linkedin.com/in/lu-dias/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="media-links-li"><a href="https://github.com/LyuboDias" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li class="media-links-li"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li class="media-links-li"><a href="#"><i class="fas fa-at"></i></a></li>
+    </ul>
+  </div>
+</div>
+<!-- ---empty space div------ -->
+<div class="empty">
+  <div data-aos="fade-right"><i class="fas fa-chevron-down"></i></div>
+  <div data-aos="fade-down"><i class="fas fa-chevron-down"></i></div>
+  <div data-aos="fade-left"><i class="fas fa-chevron-down"></i></div>
+
 </div>
 
 
+
+
+   <p><a href="#" class="glitch-resume" data-glitch="Resume">Resume</a></p>
+
+<!-- ----text animation--- -->
+<div class="animation">
+  <div class="bottom-container">
+    <h3>Hello, there!</h3>
+  </div>
+
+  <div class="top-container">
+    <h3>Hello, there!</h3>
+  </div>
+</div>
+
+<!-- ----------------------- -->
+<div class="wrap-info" data-aos="flip-up" data-aos-duration="3000">
+  <h2>Hi my name si <span class="spec-text">Lyubomir Dias</span> , a Junior <strong> Web Developer</strong></h2>
+  <br>
+  <div class="container">
+    <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium earum odit veritatis necessitatibus dolore harum dolor fugiat minus. Possimus culpa nobis exercitationem ratione repellendus eaque, iste praesentium consequuntur laboriosam at, dolore atque assumenda rem tempore enim voluptatem, fuga, harum incidunt accusamus ea. Fugit veniam architecto, rem facere recusandae! Dolorem!</h4>
+    <br>
+    <br>
+    <br>
+    <!-- ---fav resources---- -->
+    <h4>Favorite Resource</h4>
+    <br>
+    <ul>
+      <li>YouTube</li>
+      <li>Free Code Camp</li>
+      <li>Udemy</li>
+      <li>W3School</li>
+    </ul>
+  </div>
+</div>
 
   <!-- ----------bio-------------- -->
 
-<div id="bio">
-  <p>BIO ---- Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Accusamus alias voluptates laudantium! Delectus nulla eos, aperiam odit quibusdam inventore placeat?</p>
+<div id="bio" class="container bio mt-5 mb-5" data-aos="zoom-out" data-aos-duration="3000">
+  <div class="inner-bio">
+    <h3 class="text-center">Bio</h3>
+    <br>
+    <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Iusto neque eius facilis voluptatem aperiam molestiae, ipsum quod, labore. Cumque quod, velit excepturi molestias ut totam voluptatibus dolores facere hic atque ipsa aliquid vero dignissimos aperiam at quibusdam sapiente, esse suscipit magnam laboriosam quaerat ducimus est cupiditate earum voluptatem. Voluptates, accusamus placeat atque eos nam exercitationem eligendi tempore adipisci. Repellendus vel modi praesentium veritatis doloribus earum nostrum sint, consequuntur quisquam, ullam veniam blanditiis assumenda iure voluptate quidem natus optio. Praesentium excepturi fugit, provident qui doloremque aliquid accusantium sit. Voluptas, fugiat corrupti quod quos, rem recusandae similique cum vel quidem. Inventore, est.</p>
+  </div>
 </div>
 
 <!-- ------projects------ -->
-<div id="projects">
-  <ul>
-  <a href="http://airchef2020.herokuapp.com/">AirChef</a>
-  <a href="http://www.yourfestipal.com/">FestiPal</a>
-  <a href="https://www.bisimpact.com/">BisImpact</a>
-  <a href="http://www.nessycreativitycrafts.com/">NCC</a>
-</ul>
+<div id="projects" class="container mt-5">
+  <div class="card-wrap mt-5">
+    <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
+      <%= image_tag "bisimpact.png", class: "card-img" %>
+      <div class="card-body">
+        <h4><span class="spec-text card-title">BisImpact</span></h4>
+        <a href="https://www.bisimpact.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
+        <a href="https://github.com/LyuboDias/db-impact" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h4>Technologies Used</h4>
+        <ul>
+          <li>Ruby on Rails</li>
+          <li>Sass</li>
+          <li>HTML5</li>
+          <li>PostgreSQL</li>
+          <li>NodeJS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-info" data-aos="fade-left" data-aos-duration="3000">
+      <h4><span class="spec-text">My Role</span></h4>
+
+      <p>In this project I oversaw the entire SDLC. I met regularly with the client discussing project requirements, vision and end goals, while working in a scrum like manner.</p>
+
+      <h4><span class="spec-text">Project Difficulties</span></h4>
+
+      <p>This project really tested my skills in architecting out a workable solution. In the beginning of development, the first thing I did was starting up an express server. With no plan of action, I wasted two weeks worth of work before I was forced to start over.</p>
+
+      <h4><span class="spec-text">My Solution</span></h4>
+
+      <p>To solve this struggle, I decided to kick it old school with some good ol' Object Oriented Design and Analysis. Following a planning structure, I was able to improve my work efficency and reach my set sprints.</p>
+
+    </div>
+  </div>
+  <div class="card-wrap mt-5">
+    <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
+      <%= image_tag "airchef.png", class: "card-img" %>
+      <div class="card-body">
+        <h4><span class="spec-text card-title">AirChef</span></h4>
+        <a href="http://airchef2020.herokuapp.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
+        <a href="https://github.com/carabell94/AirChef" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
+        <p class="card-text">This app is hosted on a Heroku Free Dyno Plan, meaning that on the initial load, the server may need to start which can cause a small delay of 15 - 20 seconds or so. Thank you.</p>
+        <h4>Technologies Used</h4>
+        <ul>
+          <li>Ruby on Rails</li>
+          <li>Sass</li>
+          <li>HTML5</li>
+          <li>PostgreSQL</li>
+          <li>NodeJS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-info" data-aos="fade-left" data-aos-duration="3000">
+
+      <h4><span class="spec-text">My Role</span></h4>
+
+      <p>In this project I oversaw the entire SDLC. I met regularly with the client discussing project requirements, vision and end goals, while working in a scrum like manner.</p>
+
+      <h4><span class="spec-text">Project Difficulties</span></h4>
+
+      <p>This project really tested my skills in architecting out a workable solution. In the beginning of development, the first thing I did was starting up an express server. With no plan of action, I wasted two weeks worth of work before I was forced to start over.</p>
+
+      <h4><span class="spec-text">My Solution</span></h4>
+
+      <p>To solve this struggle, I decided to kick it old school with some good ol' Object Oriented Design and Analysis. Following a planning structure, I was able to improve my work efficency and reach my set sprints.</p>
+
+    </div>
+  </div>
+  <div class="card-wrap mt-5">
+    <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
+      <%= image_tag "festipal.png", class: "card-img" %>
+      <div class="card-body">
+        <h4><span class="spec-text card-title">FestiPal</span></h4>
+        <a href="http://www.yourfestipal.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
+        <a href="https://github.com/carabell94/festipal" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h4>Technologies Used</h4>
+        <ul>
+          <li>Ruby on Rails</li>
+          <li>Sass</li>
+          <li>HTML5</li>
+          <li>PostgreSQL</li>
+          <li>NodeJS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-info" data-aos="fade-left" data-aos-duration="3000">
+      <h4><span class="spec-text">My Role</span></h4>
+
+      <p>In this project I oversaw the entire SDLC. I met regularly with the client discussing project requirements, vision and end goals, while working in a scrum like manner.</p>
+
+      <h4><span class="spec-text">Project Difficulties</span></h4>
+
+      <p>This project really tested my skills in architecting out a workable solution. In the beginning of development, the first thing I did was starting up an express server. With no plan of action, I wasted two weeks worth of work before I was forced to start over.</p>
+
+      <h4><span class="spec-text">My Solution</span></h4>
+
+      <p>To solve this struggle, I decided to kick it old school with some good ol' Object Oriented Design and Analysis. Following a planning structure, I was able to improve my work efficency and reach my set sprints.</p>
+
+    </div>
+  </div>
+  <div class="card-wrap mt-5">
+    <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
+      <%= image_tag "ncc.png", class: "card-img" %>
+      <div class="card-body">
+        <h4><span class="spec-text card-title">Nessy Creativity Crafts</span></h4>
+        <a href="http://www.nessycreativitycrafts.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
+        <a href="https://github.com/LyuboDias/NessyCreativityCrafts" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h4>Technologies Used</h4>
+        <ul>
+          <li>Ruby on Rails</li>
+          <li>Sass</li>
+          <li>HTML5</li>
+          <li>PostgreSQL</li>
+          <li>NodeJS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-info" data-aos="fade-left" data-aos-duration="3000">
+      <h4><span class="spec-text">My Role</span></h4>
+
+      <p>In this project I oversaw the entire SDLC. I met regularly with the client discussing project requirements, vision and end goals, while working in a scrum like manner.</p>
+
+      <h4><span class="spec-text">Project Difficulties</span></h4>
+
+      <p>This project really tested my skills in architecting out a workable solution. In the beginning of development, the first thing I did was starting up an express server. With no plan of action, I wasted two weeks worth of work before I was forced to start over.</p>
+
+      <h4><span class="spec-text">My Solution</span></h4>
+
+      <p>To solve this struggle, I decided to kick it old school with some good ol' Object Oriented Design and Analysis. Following a planning structure, I was able to improve my work efficency and reach my set sprints.</p>
+
+    </div>
+  </div>
 </div>
+
+<!-- -----BLOG------------------ -->
+<div id="blog" class="container bio mt-5 mb-5" data-aos="zoom-out" data-aos-duration="3000" >
+  <div class="inner-blog">
+      <h4 class="text-center">My Blog</h4>
+      <br>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit provident alias aliquid ut rem praesentium accusamus modi pariatur, exercitationem quo quos aperiam optio recusandae sit nostrum corrupti. Ea facere commodi possimus ipsam. Quisquam neque placeat delectus eos ipsam corporis, aspernatur quos ipsa, dolorum aliquam beatae inventore sunt porro dolores odio quae. Quam repellendus reprehenderit laboriosam voluptatum quis natus, aliquam odio molestias, voluptatem sequi. Ratione unde quibusdam eaque expedita hic? Reprehenderit odit natus eligendi fugiat vero reiciendis magnam dolorum ullam. Praesentium, sunt est error officiis aliquid blanditiis adipisci eum vel. Quod illum temporibus eius quas similique et odio fugiat corporis quis aut, pariatur, eaque, error nobis! Nihil aliquid nesciunt fuga facilis ut, alias id eveniet amet eum rem consequuntur ducimus deleniti doloremque. Impedit dignissimos nisi libero eos laborum tempore quia iusto odit optio sit, iure perspiciatis vero voluptates illum illo harum cupiditate ratione fugiat officia nobis, ducimus veniam reiciendis. Eum nihil ex nam dolore error, deleniti obcaecati adipisci itaque porro laudantium earum molestiae beatae quisquam voluptates tempore. Ipsum, obcaecati vitae sunt voluptatem neque sed numquam harum deserunt necessitatibus error facilis molestias, doloremque. Nostrum itaque fuga nam, saepe impedit inventore quae distinctio maiores modi ut exercitationem non eaque fugit, provident velit ea!</p>
+    </div>
+</div>
+
 
 <!-- ---contacts----- -->
-<div id="contacts">
-  <p>phone - 029839832</p>
-  <p>email - jhbdhjsadhjb</p>
+<div class="footer container mt-5" id="contacts" >
+  <div class="media-links" >
+    <ul class="media-links-ul">
+      <li class="media-links-li"><a href="https://www.linkedin.com/in/lu-dias/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="media-links-li"><a href="https://github.com/LyuboDias" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li class="media-links-li"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li class="media-links-li"><a href="#"><i class="fas fa-at"></i></a></li>
+    </ul>
+  </div>
+  <p class="trademark">© 2020 <span class="spec-text">db</span> WEB</p>
+  <div class="by-hover db-music3 text-left">
+    <%= link_to image_tag("db-music-logo.png", class: "db-web-logo"), music_pages_path %><p class="by-music3">by Antoan Dias</p>
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
