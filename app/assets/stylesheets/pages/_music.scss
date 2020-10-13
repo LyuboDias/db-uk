@@ -423,6 +423,12 @@ skew to change the 'thickness' of the glitch.*/
   width: 90%;
 }
 // -----------------BIO--------------------
+.toni-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
 .bio-music {
   background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("music-tape.png");
@@ -433,6 +439,7 @@ skew to change the 'thickness' of the glitch.*/
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .inner-bio {
   width: 90%;
