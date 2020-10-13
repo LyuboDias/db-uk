@@ -178,7 +178,7 @@ body {
 
 .wrap-info {
   background-attachment: fixed;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("coding-laptop.jpeg");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611884/coding-laptop_xqz0gt.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -418,6 +418,9 @@ skew to change the 'thickness' of the glitch.*/
   }
 }
 // ---------- info div----------------------
+.le-wagon-img {
+  width: 400px;
+}
 .container {
   p {
     letter-spacing: 1px;
@@ -427,8 +430,11 @@ skew to change the 'thickness' of the glitch.*/
     font-size: 20px;
   }
 }
-.wrap-info ul {
-  list-style-type: none;
+.wrap-info {
+  height: 100%;
+  ul {
+    list-style-type: none;
+  }
 }
 // --------projects---------
 .card-body ul {
@@ -454,7 +460,7 @@ skew to change the 'thickness' of the glitch.*/
 // ----------BLOG-------------------
 .blog {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("coding2.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding2_yp96x4.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -467,9 +473,10 @@ skew to change the 'thickness' of the glitch.*/
   width: 90%;
 }
 // -----------------BIO--------------------
+
 .bio {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("coding-background.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611885/coding-background_ygn01x.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;

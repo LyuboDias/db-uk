@@ -1,25 +1,5 @@
-html,body
-{
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;;
-  background-color: #121212;
-  color: white;
-}
-// ------- red font-family - Audiowide
 
-.spec-text2 {
-  font-family: 'Audiowide', cursive;
-  color: $blue;
-}
+
 // -----text colored-------
 // .test {
 //   background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
@@ -145,7 +125,7 @@ body {
 
 .wrap-music {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mixer.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611881/mixer_ud7iv7.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -171,7 +151,7 @@ body {
 }
 .wrap-info-music {
   background-attachment: fixed;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mixer2.jpeg");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611886/mixer2_aj2vx9.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -181,48 +161,13 @@ body {
   width: 100%;
   padding-top: 100px;
 }
-
-// --------------scrolling text-----------------
-.rails-logo {
-  width: 35px;
-  height: 40px;
-}
-.text-wrap {
+// ---------videos div ---------
+.videos {
   display: flex;
-  width: 100%;
-}
-.marquee {
-  width: 100%;
-  line-height: 40px;
-  background-color: #121212;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  position: absolute;
-  right: 0;
-}
-.marquee p {
-  color: $red;
-  margin: auto 0;
-  font-size: 40px;
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 10s linear infinite;
-  i {
-    margin: auto 20px;
+  justify-content: space-around;
+  iframe {
+    padding: 20px;
   }
-}
-@keyframes marquee {
-  0%   { transform: translate(0, 0); }
-  100% { transform: translate(-100%, 0); }
-}
-// ------back to top---------------------------
-.back-to-top {
-font-size: 2em;
-z-index: 22;
-position: fixed;
-bottom: 10px;
-right: 20px;
 }
 
 // ----- glitch music-----
@@ -386,31 +331,11 @@ skew to change the 'thickness' of the glitch.*/
 .wrap-info-music ul {
   list-style-type: none;
 }
-// --------projects---------
-.card-body ul {
-  margin-left: 20px;
-}
-.card-img {
-  width: 100%;
-}
-.card {
-  background-color: #121212;
-}
-.card-wrap {
-  display: flex;
-  justify-content: space-between;
-  a {
-    letter-spacing: 2px;
-    margin-left: 5px;
-  }
-}
-.project-info {
-  width: 40%;
-}
+
 // ----------BLOG-------------------
 .blog-music {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("music-keyboard.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611945/music-tape_hswrwl.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -431,7 +356,7 @@ skew to change the 'thickness' of the glitch.*/
 }
 .bio-music {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("music-tape.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611888/music-keyboard_icznr1.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
