@@ -1,4 +1,7 @@
-
+.spec-text2 {
+  font-family: 'Audiowide', cursive;
+  color: $blue;
+}
 
 // -----text colored-------
 // .test {
@@ -9,44 +12,33 @@
 //   color: transparent;
 // }
 // ------image db web link--------
-.footer-music {
-  position: relative;
-}
 .db-web-logo {
   width: 60px;
 }
-.db-music {
-  position: absolute;
-  top: 1px;
+.db-music2 {
+  position: fixed;
+  bottom: 1px;
   left: 1px;
+  z-index: 999;
 }
 .by-hover:hover p {
   transition: .5s;
   display: block;
 }
-.by-music {
-  display: none;
-  top: 0;
-  left: 60px;
-  position: absolute;
-  font-size: 14px;
-  margin: 0 auto;
-  color: $red;
-}
-.db-music2 {
-  position: absolute;
-  bottom: 1px;
-  right: 1px;
-}
 .by-music2 {
   display: none;
-  bottom: 0;
-  right: 60px;
+  top: 1px;
+  left: 60px;
   position: absolute;
   font-size: 14px!important;
   margin: 0 auto;
   color: $red;
 }
+
+.footer-music {
+  position: relative;
+}
+
 // -----main links -------
 
 .main-links {
@@ -69,14 +61,7 @@
     }
   }
 }
-.empty-music {
-  height: 200px;
-  color: $blue;
-  font-size: 34px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 // -----media links---------
 .music-links {
   text-align: center;
@@ -134,9 +119,6 @@
   text-align: center;
   width: 100%;
   padding-top: 30px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   h1 {
     font-size: 12em;
     font-family: 'Audiowide', cursive;
@@ -146,13 +128,12 @@
     font-size: 4rem;
     font-family: Monoton;
     color: $blue;
-    // font-family: 'Audiowide', cursive;
   }
 }
 .wrap-info-music {
   background-attachment: fixed;
    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611886/mixer2_aj2vx9.jpg");
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,73 +144,17 @@
 }
 // ---------videos div ---------
 .videos {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   iframe {
     padding: 20px;
   }
 }
 
-// ----- glitch music-----
-.glitch-music {
-  font-size: 30px;
-  text-decoration: none;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: $blue;
-  letter-spacing: 5px;
-
-  &:before, &:after {
-    display: block;
-    content: attr(data-glitch);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: .8;
-  } &:after {
-    color: $red;
-    z-index: -2;
-  } &:before {
-    color: $blue;
-    z-index: -1;
-  }
-  &:hover {
-    &:before {
-      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
-    }
-    &:after {
-      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
-    }
-  }
-}
-
-
-
-@keyframes glitch {
-  0% {
-    transform: translate(0)
-  }
-  20% {
-    transform: translate(-5px, 5px)
-  }
-  40% {
-    transform: translate(-5px, -5px)
-  }
-  60% {
-    transform: translate(5px, 5px)
-  }
-  80% {
-    transform: translate(5px, -5px)
-  }
-  to {
-    transform: translate(0)
-  }
-}
-// ---------------glits db -----------------
+// ---------------glitch music-----------------
 #app {
   margin: 0;
   padding: 0;
@@ -336,7 +261,7 @@ skew to change the 'thickness' of the glitch.*/
 .blog-music {
   background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611945/music-tape_hswrwl.png");
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -357,7 +282,7 @@ skew to change the 'thickness' of the glitch.*/
 .bio-music {
   background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611888/music-keyboard_icznr1.jpg");
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -29,16 +29,15 @@ body {
 //   color: transparent;
 // }
 // -----main links -------
-.footer {
-  position: relative;
-}
+
 .db-web-logo {
   width: 60px;
 }
 .db-music1 {
-  position: absolute;
-  top: -70px;
+  position: fixed;
+  bottom: 1px;
   left: 1px;
+  z-index: 999;
 }
 .by-hover1:hover p {
   transition: .5s;
@@ -49,29 +48,16 @@ body {
   top: 1px;
   left: 60px;
   position: absolute;
-  font-size: 14px;
-  margin: 0 auto;
-  color: $blue;
-}
-.db-music3 {
-  position: absolute;
-  bottom: 1px;
-  right: 1px;
-}
-.by-music3 {
-  display: none;
-  bottom: 0;
-  right: 60px;
-  position: absolute;
   font-size: 14px!important;
   margin: 0 auto;
   color: $blue;
 }
+
 .main-links {
   text-align: center;
   ul {
     list-style-type: none;
-    li, span{
+    li {
 
       display: inline-block;
       text-align: center;
@@ -88,14 +74,7 @@ body {
     }
   }
 }
-.empty {
-  height: 200px;
-  color: $blue;
-  font-size: 34px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 // -----media links---------
 .media-links {
   text-align: center;
@@ -141,7 +120,7 @@ body {
     }
   }
 }
-// -------------------------
+// ------------banner-------------
 .wrap {
   background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding-keyboard_yclssh.jpg");
@@ -153,9 +132,6 @@ body {
   text-align: center;
   width: 100%;
   padding-top: 100px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   h1 {
     font-size: 12em;
     font-family: 'Audiowide', cursive;
@@ -165,28 +141,36 @@ body {
     font-size: 4rem;
     font-family: Monoton;
     color: $red;
-    // font-family: 'Audiowide', cursive;
   }
 }
 
-
-.blue {
-  color: $blue;
+// ---------- info div----------------------
+.le-wagon-img {
+  width: 60%;
 }
-
-
 
 .wrap-info {
   background-attachment: fixed;
    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611884/coding-laptop_xqz0gt.jpg");
-  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   text-align: center;
   width: 100%;
-  padding-top: 100px;
+  height: 100%;
+  .container {
+    p {
+      letter-spacing: 1px;
+      font-size: 20px;
+    }
+    li {
+      font-size: 20px;
+    }
+  }
+  ul {
+    list-style-type: none;
+  }
 }
 
 // --------------scrolling text-----------------
@@ -223,14 +207,13 @@ body {
   0%   { transform: translate(0, 0); }
   100% { transform: translate(-100%, 0); }
 }
-// --------------------------
 // ------back to top---------------------------
 .back-to-top {
-font-size: 2em;
-z-index: 22;
-position: fixed;
-bottom: 10px;
-right: 20px;
+  font-size: 2em;
+  z-index: 22;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
 }
 // ------hello there text animation----
 .animation {
@@ -269,66 +252,8 @@ right: 20px;
   }
 }
 
-// ----- glitch resume-----
-.glitch-resume {
-  font-size: 30px;
-  text-decoration: none;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: $blue;
-  letter-spacing: 5px;
 
-  &:before, &:after {
-    display: block;
-    content: attr(data-glitch);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: .8;
-  } &:after {
-    color: $red;
-    z-index: -2;
-  } &:before {
-    color: $blue;
-    z-index: -1;
-  }
-  &:hover {
-    &:before {
-      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
-    }
-    &:after {
-      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
-    }
-  }
-}
-
-
-
-@keyframes glitch {
-  0% {
-    transform: translate(0)
-  }
-  20% {
-    transform: translate(-5px, 5px)
-  }
-  40% {
-    transform: translate(-5px, -5px)
-  }
-  60% {
-    transform: translate(5px, 5px)
-  }
-  80% {
-    transform: translate(5px, -5px)
-  }
-  to {
-    transform: translate(0)
-  }
-}
-// ---------------glits db -----------------
+// ---------------glitch db -----------------
 #app {
   margin: 0;
   padding: 0;
@@ -417,25 +342,7 @@ skew to change the 'thickness' of the glitch.*/
     }
   }
 }
-// ---------- info div----------------------
-.le-wagon-img {
-  width: 400px;
-}
-.container {
-  p {
-    letter-spacing: 1px;
-    font-size: 20px;
-  }
-  li {
-    font-size: 20px;
-  }
-}
-.wrap-info {
-  height: 100%;
-  ul {
-    list-style-type: none;
-  }
-}
+
 // --------projects---------
 .card-body ul {
   margin-left: 20px;
@@ -461,23 +368,25 @@ skew to change the 'thickness' of the glitch.*/
 .blog {
   background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding2_yp96x4.jpg");
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  p {
+    font-size: 20px;
+  }
 }
-.inner-blog {
-  width: 90%;
-}
+
 // -----------------BIO--------------------
 
 .bio {
   background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611885/coding-background_ygn01x.jpg");
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -486,5 +395,48 @@ skew to change the 'thickness' of the glitch.*/
   align-items: center;
 }
 .inner-bio {
-  width: 90%;
+  margin: 0!important;
+  padding: 0;
 }
+// ------footer--------
+
+.footer {
+  position: relative;
+}
+// -----media queries-------
+
+@media only screen and (max-width: 550px) {
+  .card-wrap {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%!important;
+  }
+  .project-info {
+    width: 100%!important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
