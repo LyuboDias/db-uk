@@ -2,7 +2,9 @@
   font-family: 'Audiowide', cursive;
   color: $blue;
 }
-
+.red {
+  color: $red;
+}
 // -----text colored-------
 // .test {
 //   background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
@@ -111,7 +113,7 @@
 .wrap-music {
   background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611881/mixer_ud7iv7.jpg");
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,4 +295,86 @@ skew to change the 'thickness' of the glitch.*/
 }
 .inner-bio {
   width: 90%;
+}
+
+
+.mobile-navbar-music {
+  display: none;
+}
+
+.div-to-web {
+  display: none;
+}
+
+
+@media only screen and (max-width: 340px) {
+  .mobile-navbar-music {
+    .mobile-navbar-music-li {
+      margin: 0 10px!important;
+    }
+  }
+  .music-links-li {
+    margin: 0 5px!important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-music {
+    padding-bottom: 100px;
+  }
+  .div-to-web {
+    display: block;
+    .link-to-music {
+      display: inline-block;
+      width: 100px;
+    }
+  }
+
+  .main-links {
+    display: none;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .by-hover {
+    display: none;
+  }
+  .mobile-navbar-music {
+    z-index: 1000;
+    padding: 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #121212;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mobile-navbar-music-ul {
+      display: flex;
+      margin: 0;
+      .mobile-navbar-music-li {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        margin: 0 20px;
+        i {
+          font-size: 22px;
+        }
+        a {
+          transition: 0.5s;
+          font-size: 10px;
+          color: white;
+          &:active {
+            color: $blue;
+          }
+          &:focus {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
 }

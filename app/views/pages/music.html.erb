@@ -8,12 +8,13 @@
 
 <!-- -------main links---- -->
   <div class="main-links" data-aos="fade-down" data-aos-duration="3000">
-  <ul>
-    <!-- <span class="test" >Test</span> -->
-    <li><a href="#video">Video</a></li>
-    <li><a href="#bio">Bio</a></li>
-    <li><a href="#contacts" >Contacts</a></li>
-    <li><a href="#music">Music</a></li>
+    <ul>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#contacts" >Contacts</a></li>
+      <li><a href="#music">Music</a></li>
+    </ul>
   </div>
   <h1 data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
@@ -34,6 +35,11 @@
       <li class="music-links-li"><a href="https://www.instagram.com/antoan_dias/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
     </ul>
   </div>
+</div>
+
+<div class="div-to-web text-center pt-5">
+  <%= link_to image_tag("db-web-logo.png", class: "link-to-music"), root_path %>
+  <p class="red">by Lyubomir Dias</p>
 </div>
 
 <!-- ------------info div----------- -->
@@ -78,12 +84,12 @@
 </div>
 
 <!-- -----sound cloud----- -->
-<div class="container text-center pt-5 pb-5">
+<div id="music" class="container text-center pt-5 pb-5">
   <h2>My Music on Soundcloud</h2>
   <p>Please go and check it out, don`t forget to subscribe :) <br> Thank You!</p>
-  <div class="videos container">
+  <div class="videos ">
     <div>
-      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/832933441&color=%230a0a0e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <iframe width="100%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1148310751&color=%230a0a0e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     </div>
     <div>
       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/832932562&color=%230a0a0e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -102,6 +108,10 @@
     </div>
 </div>
 
+<div class="div-to-web text-center pt-5">
+  <%= link_to image_tag("db-web-logo.png", class: "link-to-music"), root_path %>
+  <p class="red">by Lyubomir Dias</p>
+</div>
 
 <!-- ---contacts----- -->
 <div class="footer-music container mt-5" id="contacts" >
@@ -120,4 +130,12 @@
   </div>
 </div>
 
-
+<div class="mobile-navbar-music">
+    <ul class="mobile-navbar-music-ul">
+      <li class="mobile-navbar-music-li"><a href="#blog"><i class="fab fa-blogger-b"></i><br>Blog</a></li>
+      <li class="mobile-navbar-music-li"><a href="#video"><i class="fab fa-youtube"></i><br>Video</a></li>
+      <li class="mobile-navbar-music-li"><a href="#bio"><i class="fas fa-book-open"></i><br>Bio</a></li>
+      <li class="mobile-navbar-music-li"><a href="#music" ><i class="fas fa-headphones"></i><br>Music</a></li>
+      <li class="mobile-navbar-music-li"><a href="#contacts"><i class="fas fa-address-book"></i> <br>Contacts</a></li>
+    </ul>
+</div>
