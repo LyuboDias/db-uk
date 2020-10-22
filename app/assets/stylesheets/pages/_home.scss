@@ -130,16 +130,15 @@ body {
 }
 // ------------banner-------------
 .wrap {
-  background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding-keyboard_yclssh.jpg");
-  height: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  background-attachment: fixed;
+  height: 100%;
   text-align: center;
   width: 100%;
-  // padding-top: 100px;
   h1 {
     font-size: 12em;
     font-family: 'Audiowide', cursive;
@@ -434,6 +433,21 @@ skew to change the 'thickness' of the glitch.*/
 }
 
 @media only screen and (max-width: 1024px) {
+  .wrap.wrap-info.bio.blog {
+    background-attachment: scroll;
+  }
+
+  // .wrap-info {
+  //   background-attachment: scroll;
+  // }
+
+  // .bio {
+  //   background-attachment: scroll;
+  // }
+
+  // .blog {
+  //   background-attachment: scroll;
+  // }
 
   .div-to-music {
     display: block;
@@ -458,7 +472,7 @@ skew to change the 'thickness' of the glitch.*/
   }
   .mobile-navbar {
     z-index: 1000;
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     position: fixed;
     bottom: 0;

@@ -319,6 +319,10 @@ skew to change the 'thickness' of the glitch.*/
 }
 
 @media only screen and (max-width: 1024px) {
+  .wrap-music.wrap-info-music.bio-music.blog-music {
+    background-attachment: scroll;
+  }
+
   .footer-music {
     padding-bottom: 100px;
   }
@@ -343,7 +347,7 @@ skew to change the 'thickness' of the glitch.*/
   }
   .mobile-navbar-music {
     z-index: 1000;
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     position: fixed;
     bottom: 0;
