@@ -79,6 +79,60 @@ body {
   }
 }
 
+// -------modal--------------------
+.modalBtn {
+  background-color: #121212;
+  color: white;
+}
+.simpleModal {
+  position: fixed;
+  display: none;
+  margin: 0 auto;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.3);
+  .modalContent {
+    background-color: #121212;
+    padding: 100px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.3), 0 7px 20px 0 rgba(0,0,0,0.22);
+    position: relative;
+  }
+  .closeBtn {
+    font-family: sans-serif;
+    transform: rotate(45deg);
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    width: 20px;
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+.modalBtn {
+  color: white;
+  transition: .5s;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  &:hover {
+    text-shadow: 0px 0px 30px white!important;
+    color: white;
+    text-decoration: none;
+  }
+}
+
 // -----media links---------
 .media-links {
   text-align: center;
@@ -423,6 +477,7 @@ skew to change the 'thickness' of the glitch.*/
 // -----media queries-------
 
 @media only screen and (max-width: 340px) {
+
   .mobile-navbar {
     .mobile-navbar-li {
       margin: 0 10px!important;
@@ -434,21 +489,14 @@ skew to change the 'thickness' of the glitch.*/
 }
 
 @media only screen and (max-width: 1024px) {
-  // .wrap.wrap-info.bio.blog {
-  //   background-attachment: scroll;
-  // }
+  .modalContent {
+    width: 100%!important;
+  }
 
-  .wrap-info {
+  .wrap, .wrap-info, .blog {
     background-attachment: initial;
   }
 
-  // .bio {
-  //   background-attachment: scroll;
-  // }
-
-  // .blog {
-  //   background-attachment: scroll;
-  // }
 
   .div-to-music {
     display: block;
@@ -511,6 +559,9 @@ skew to change the 'thickness' of the glitch.*/
 
 
 @media only screen and (max-width: 550px) {
+  .modalContent {
+    padding: 0!important;
+  }
   .card-wrap {
     flex-direction: column;
   }
@@ -519,5 +570,11 @@ skew to change the 'thickness' of the glitch.*/
   }
   .project-info {
     width: 100%!important;
+  }
+  .projects {
+    padding: 10px!important;
+  }
+  .le-wagon-img {
+    width: 80%;
   }
 }

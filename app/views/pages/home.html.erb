@@ -8,24 +8,40 @@
     </div>
 </div>
 <br>
+<br>
+<br>
+<!-------modal resume-------  -->
 
-<br>
-<br>
+  <div id="simpleModal" class="simpleModal">
+      <div class="modalContent">
+        <span id="closeBtn" class="closeBtn">+</span>
+          <%= image_tag "resume1.png"  %>
+          <%= image_tag "resume2.png" %>
+        <br>
+        <a href="#" download="/images/resume1.png" class="text-center">
+          <button type="button" class="btn btn-danger dwn-btn">Download</button>
+        </a>
+      </div>
+  </div>
 
 <!----banner------->
 
 <div class="wrap pb-5" data-aos="zoom-in" data-aos-duration="3000">
+
+
+
 
   <!-- -------main links---- -->
   <div class="main-links" data-aos="fade-down" data-aos-duration="3000">
     <ul>
       <li><a href="#blog">Blog</a></li>
       <li><a href="#bio">Bio</a></li>
-      <li><a href="#">Resume</a></li>
+      <li><a class="modalBtn" id="modalBtn">Resume</a></li>
       <li><a href="#projects" >Projects</a></li>
       <li><a href="#contacts">Contacts</a></li>
     </ul>
   </div>
+
 
   <h1 data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
@@ -48,10 +64,7 @@
   </div>
 
 </div>
-<!-- <div class="div-to-music text-center pt-5">
-  <%= link_to image_tag("db-music-logo.png", class: "link-to-music"), music_path %>
-  <p class="blue">by Antoan Dias</p>
-</div> -->
+
 <!-- ----text animation--->
 <div class="animation">
   <div class="bottom-container">
@@ -244,7 +257,7 @@
 </div>
 
 <div class="div-to-music text-center pt-5">
-  <%= link_to image_tag("db-music-logo.png", class: "link-to-music"), music_path %>
+  <%= link_to image_tag("db-music-trans.png", class: "link-to-music"), music_path %>
   <p class="blue">by Antoan Dias</p>
 </div>
 
@@ -260,7 +273,7 @@
   </div>
   <p class="text-center">© 2020 <span class="spec-text">db</span> WEB</p>
     <div class="by-hover1 db-music1 text-left">
-        <%= link_to image_tag("db-music-logo.png", class: "db-web-logo by-hover1"), music_path %><p class="by-music1">by Antoan Dias</p>
+        <%= link_to image_tag("db-music-trans.png", class: "db-web-logo by-hover1"), music_path %><p class="by-music1">by Antoan Dias</p>
     </div>
 </div>
 
@@ -269,7 +282,7 @@
     <ul class="mobile-navbar-ul">
       <li class="mobile-navbar-li"><a href="#blog"><i class="fab fa-blogger-b"></i><br>Blog</a></li>
       <li class="mobile-navbar-li"><a href="#bio"><i class="fas fa-book-open"></i><br>Bio</a></li>
-      <li class="mobile-navbar-li"><a href="#"><i class="fas fa-file"></i><br>Resume</a></li>
+      <li class="mobile-navbar-li"><a id="modalBtn2"><i class="fas fa-file"></i><br>Resume</a></li>  <!-- need to make it work to open modal-->
       <li class="mobile-navbar-li"><a href="#projects" ><i class="fas fa-laptop-code"></i><br>Projects</a></li>
       <li class="mobile-navbar-li"><a href="#contacts"><i class="fas fa-address-book"></i> <br>Contacts</a></li>
     </ul>
