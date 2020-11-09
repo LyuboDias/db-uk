@@ -305,7 +305,14 @@ skew to change the 'thickness' of the glitch.*/
 .div-to-web {
   display: none;
 }
-
+@media only screen and (max-width: 550px) {
+  .inner-blog {
+    width: 100%;
+  }
+  .media-videos {
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: 340px) {
   .mobile-navbar-music {

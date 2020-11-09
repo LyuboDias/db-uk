@@ -559,6 +559,12 @@ skew to change the 'thickness' of the glitch.*/
 
 
 @media only screen and (max-width: 550px) {
+  .card-body {
+    padding: 10px 0;
+  }
+  .inner-bio {
+    width: 100%!important;
+  }
   .modalContent {
     padding: 0!important;
   }
