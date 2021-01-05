@@ -1,5 +1,5 @@
-html,body
-{
+html,
+body {
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;;
+  font-family: "Roboto", sans-serif;
   background-color: #121212;
   color: white;
 }
@@ -20,18 +20,9 @@ body {
   color: $blue;
 }
 .spec-text {
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   color: $red;
 }
-// -----text colored-------
-// .test {
-//   background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
-//   -webkit-background-clip: text;
-//   -moz-background-clip: text;
-//   background-clip: text;
-//   color: transparent;
-// }
-// -----main links -------
 
 .db-web-logo {
   width: 60px;
@@ -43,7 +34,7 @@ body {
   z-index: 999;
 }
 .by-hover1:hover p {
-  transition: .5s;
+  transition: 0.5s;
   display: block;
 }
 
@@ -52,7 +43,7 @@ body {
   top: 1px;
   left: 60px;
   position: absolute;
-  font-size: 14px!important;
+  font-size: 14px !important;
   margin: 0 auto;
   color: $blue;
 }
@@ -69,10 +60,10 @@ body {
       font-size: 20px;
       a {
         color: white;
-        transition: .5s;
+        transition: 0.5s;
         text-decoration: none;
         &:hover {
-        text-shadow: 0px 0px 30px white!important;
+          text-shadow: 0px 0px 30px white !important;
         }
       }
     }
@@ -94,7 +85,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   .modalContent {
     background-color: #121212;
     padding: 100px;
@@ -102,7 +93,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 8px rgba(0,0,0,0.3), 0 7px 20px 0 rgba(0,0,0,0.22);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 7px 20px 0 rgba(0, 0, 0, 0.22);
     position: relative;
   }
   .closeBtn {
@@ -122,12 +113,12 @@ body {
 }
 .modalBtn {
   color: white;
-  transition: .5s;
+  transition: 0.5s;
   text-decoration: none;
   cursor: pointer;
   font-size: 20px;
   &:hover {
-    text-shadow: 0px 0px 30px white!important;
+    text-shadow: 0px 0px 30px white !important;
     color: white;
     text-decoration: none;
   }
@@ -146,7 +137,7 @@ body {
       position: relative;
       display: block;
       font-size: 24px;
-      background: rgb(31,29,29);
+      background: rgb(31, 29, 29);
       border-radius: 50%;
       margin: 0 15px;
       line-height: 50px;
@@ -164,7 +155,7 @@ body {
       }
       &:before {
         position: absolute;
-        content: '';
+        content: "";
         top: 0;
         left: 0;
         background: $red;
@@ -184,7 +175,8 @@ body {
 }
 // ------------banner-------------
 .wrap {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding-keyboard_yclssh.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding-keyboard_yclssh.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,7 +187,7 @@ body {
   width: 100%;
   h1 {
     font-size: 12em;
-    font-family: 'Audiowide', cursive;
+    font-family: "Audiowide", cursive;
     color: $red;
   }
   .web {
@@ -212,7 +204,8 @@ body {
 
 .wrap-info {
   background-attachment: fixed;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611884/coding-laptop_xqz0gt.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611884/coding-laptop_xqz0gt.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,8 +258,12 @@ body {
   }
 }
 @keyframes marquee {
-  0%   { transform: translate(0, 0); }
-  100% { transform: translate(-100%, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 // ------back to top---------------------------
 .back-to-top {
@@ -305,14 +302,14 @@ body {
 }
 
 @keyframes circleMove {
-  0%, 100% {
+  0%,
+  100% {
     clip-path: circle(10% at 85% 50%);
   }
   50% {
     clip-path: circle(10% at 15% 50%);
   }
 }
-
 
 // ---------------glitch db -----------------
 #app {
@@ -325,16 +322,16 @@ body {
 }
 
 #wrapper {
-   text-align: center;
+  text-align: center;
 }
 
 @mixin glitchCopy {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .glitch {
@@ -344,7 +341,7 @@ body {
   animation: glitch-skew 1s infinite linear alternate-reverse;
 
   // Creates a copy before our text.
-  &::before{
+  &::before {
     // Duplicates our text with the mixin.
     @include glitchCopy;
     // Scoots text slightly to the left for the color offset.
@@ -377,7 +374,7 @@ skew to change the 'thickness' of the glitch.*/
   $steps: 20;
   @for $i from 0 through $steps {
     #{percentage($i*(1/$steps))} {
-      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
       transform: skew((random(100) / 100) + deg);
     }
   }
@@ -388,7 +385,7 @@ skew to change the 'thickness' of the glitch.*/
   $steps: 20;
   @for $i from 0 through $steps {
     #{percentage($i*(1/$steps))} {
-      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
       transform: skew((random(100) / 100) + deg);
     }
   }
@@ -428,12 +425,12 @@ skew to change the 'thickness' of the glitch.*/
 // ----------BLOG-------------------
 
 .blog {
-  background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding2_yp96x4.jpg");
+  // background-attachment: fixed;
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding2_yp96x4.jpg");
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,17 +444,18 @@ skew to change the 'thickness' of the glitch.*/
 
 .bio {
   // background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611885/coding-background_ygn01x.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  //   url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611885/coding-background_ygn01x.jpg");
+  height: 100vh;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .inner-bio {
-  margin: 0!important;
+  margin: 0 !important;
   padding: 0;
 }
 // ------footer--------
@@ -473,30 +471,29 @@ skew to change the 'thickness' of the glitch.*/
   display: none;
 }
 
-
 // -----media queries-------
 
 @media only screen and (max-width: 340px) {
-
   .mobile-navbar {
     .mobile-navbar-li {
-      margin: 0 10px!important;
+      margin: 0 10px !important;
     }
   }
   .media-links-li {
-    margin: 0 10px!important;
+    margin: 0 10px !important;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .modalContent {
-    width: 100%!important;
+    width: 100% !important;
   }
 
-  .wrap, .wrap-info, .blog {
+  .wrap,
+  .wrap-info,
+  .blog {
     background-attachment: initial;
   }
-
 
   .div-to-music {
     display: block;
@@ -557,28 +554,27 @@ skew to change the 'thickness' of the glitch.*/
   }
 }
 
-
 @media only screen and (max-width: 550px) {
   .card-body {
     padding: 10px 0;
   }
   .inner-bio {
-    width: 100%!important;
+    width: 100% !important;
   }
   .modalContent {
-    padding: 0!important;
+    padding: 0 !important;
   }
   .card-wrap {
     flex-direction: column;
   }
   .card {
-    width: 100%!important;
+    width: 100% !important;
   }
   .project-info {
-    width: 100%!important;
+    width: 100% !important;
   }
   .projects {
-    padding: 10px!important;
+    padding: 10px !important;
   }
   .le-wagon-img {
     width: 80%;
