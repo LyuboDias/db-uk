@@ -580,3 +580,35 @@ skew to change the 'thickness' of the glitch.*/
     width: 80%;
   }
 }
+// ----------cookies modal---------
+
+.modal-dialog {
+  margin-top: 0rem;
+  max-width: 100%;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  .modal-content {
+    border-radius: 0rem;
+  }
+
+  .modal-body {
+    background-color: rgb(9, 9, 9);
+  }
+
+  .modal-buttons {
+    .btn {
+      margin: 0.2rem;
+    }
+  }
+}
+// -----------div image ----------------------
+.image-div {
+  height: 30vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611884/coding-laptop_xqz0gt.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}

@@ -320,12 +320,22 @@
         <li class="media-links-li"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </div>
+    <%# ------terms and policy------- %>
+    <br>
+    <div class="container d-flex justify-content-center" >
+      <h6>
+        <%= link_to "Terms of Use", terms_of_use_path, class: "text-center text-white" %>
+        •
+        <%= link_to "Privacy Policy", privacy_policy_path, class: "text-center text-white" %>
+      </h6>
+    </div>
 </div>
 
 <div class="div-to-music text-center pt-5">
   <%= link_to image_tag("db-music-trans.png", class: "link-to-music"), music_path %>
   <p class="blue">by Antoan Dias</p>
 </div>
+
 
 <!-- ---contacts----- -->
 <div class="footer container mt-5 mb-5"  >
@@ -345,4 +355,19 @@
       <li class="mobile-navbar-li"><a href="#contacts"><i class="fas fa-address-book"></i> <br>Contacts</a></li>
     </ul>
 </div>
+<%# ---------cookies modal------ %>
 
+<div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-body ">
+        <div class="notice d-flex justify-content-around align-items-center ">
+          <div class="cookie-text">&nbsp; &nbsp; This website uses cookies to personalize content and analyse traffic in order to offer you a better experience.</div>
+          <div class="modal-buttons d-flex flex-column flex-lg-row">
+            <a href="#" class="btn btn-danger btn-sm" data-dismiss="modal">Accept</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
