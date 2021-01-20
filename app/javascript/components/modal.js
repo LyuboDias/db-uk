@@ -21,6 +21,13 @@ function closeOutside(e) {
   }
 }
 // ----coookie modal-----
-$(document).ready(function () {
-  $("#cookieModal").modal("show");
-});
+// function cookieagree() {
+//   document.getElementById("cookiemodal").remove();
+// }
+
+// function cookieclose() {
+//   document.getElementById("cookiemodal").remove();
+// }
+
+// document.getElementById("cookieagree").addEventListener("click", cookieagree);
+// document.getElementById("cookieclose").addEventListener("click", cookieclose);

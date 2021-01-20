@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   background-color: #121212;
-  color: white;
+  color: #fff;
 }
 // ------- red font-family - Audiowide
 
@@ -59,11 +59,11 @@ body {
       text-decoration: none;
       font-size: 20px;
       a {
-        color: white;
+        color: #fff;
         transition: 0.5s;
         text-decoration: none;
         &:hover {
-          text-shadow: 0px 0px 30px white !important;
+          text-shadow: 0px 0px 30px #fff !important;
         }
       }
     }
@@ -73,7 +73,7 @@ body {
 // -------modal--------------------
 .modalBtn {
   background-color: #121212;
-  color: white;
+  color: #fff;
 }
 .simpleModal {
   position: fixed;
@@ -106,20 +106,20 @@ body {
     font-size: 30px;
     width: 20px;
     &:hover {
-      color: white;
+      color: #fff;
       cursor: pointer;
     }
   }
 }
 .modalBtn {
-  color: white;
+  color: #fff;
   transition: 0.5s;
   text-decoration: none;
   cursor: pointer;
   font-size: 20px;
   &:hover {
-    text-shadow: 0px 0px 30px white !important;
-    color: white;
+    text-shadow: 0px 0px 30px #fff !important;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -518,7 +518,7 @@ skew to change the 'thickness' of the glitch.*/
   }
   .mobile-navbar {
     z-index: 1000;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -582,29 +582,129 @@ skew to change the 'thickness' of the glitch.*/
 }
 // ----------cookies modal---------
 
-.modal-dialog {
-  margin-top: 0rem;
-  max-width: 100%;
+.cookie-modal {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  left: auto;
+  top: auto;
+  height: auto;
+  max-width: 500px;
+  min-width: 280px;
+  background: transparent;
+  z-index: 99999;
+}
+
+.cookie-modal-container {
+  border-radius: 5px;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  position: relative;
+  min-height: 88px;
+  background-color: rgb(18, 18, 18);
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cookie-modal-container-close {
   position: absolute;
-  width: 100%;
-  bottom: 0px;
-  .modal-content {
-    border-radius: 0rem;
-  }
+  top: 0;
+  right: 0;
+  height: 44px;
+  width: 44px;
+  color: #69707c;
+  cursor: pointer;
+}
 
-  .modal-body {
-    background-color: rgb(9, 9, 9);
-  }
+.cookie-modal-container-close:before,
+.cookie-modal-container-close:after {
+  transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 0;
+  margin-left: -10px;
+  display: block;
+  height: 3px;
+  width: 15px;
+  background-color: #fff;
+  transition: all 0.25s ease-out;
+}
+.cookie-modal-container-close:after {
+  transform: rotate(-135deg);
+}
 
-  .modal-buttons {
-    .btn {
-      margin: 0.2rem;
-    }
+.cookie-modal-container-content {
+  color: #fff;
+  position: relative;
+  padding: 20px;
+}
+
+.cookie-modal-container-content-text {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 10px 0;
+  padding-bottom: 5px;
+}
+
+.cookie-modal-container-content-button {
+  padding: 4px 20px;
+  margin-right: 10px;
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+  background-color: $red;
+  border: solid 1px #fff;
+  &:hover {
+    background-color: $red;
+    border: solid 1px rgb(176, 175, 175);
   }
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  overflow: visible;
+  max-width: 100%;
+  transition: color 200ms, background-color 200ms, border-color 200ms;
+}
+
+.cookie-modal-container-content-link {
+  padding: 4px 20px;
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+  background-color: $red;
+  border: solid 1px #fff;
+  &:hover {
+    background-color: $red;
+    border: solid 1px rgb(176, 175, 175);
+  }
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  overflow: visible;
+  max-width: 100%;
+  transition: color 200ms, background-color 200ms, border-color 200ms;
 }
 // -----------div image ----------------------
 .image-div {
-  height: 30vh;
+  height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611884/coding-laptop_xqz0gt.jpg");
   background-size: cover;

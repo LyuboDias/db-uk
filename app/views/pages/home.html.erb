@@ -25,10 +25,6 @@
 <!----banner------->
 
 <div class="wrap pb-5" data-aos="zoom-in" data-aos-duration="3000">
-
-
-
-
   <!-- -------main links---- -->
   <div class="main-links" data-aos="fade-down" data-aos-duration="3000">
     <ul>
@@ -114,8 +110,10 @@
 </div>
 
 <!-- ------projects------ -->
+
+<%# ------- Bisimpact -------------------- %>
 <div id="projects" class="p-5 projects ">
-<h3 class="text-center p-5">Here are the projects I have worked on.</h3>
+  <h3 class="text-center p-5">Here are the projects I have worked on.</h3>
   <div class="card-wrap mt-5">
     <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
       <%= image_tag "bisimpact.png", class: "card-img" %>
@@ -153,6 +151,7 @@
 
     </div>
   </div>
+  <%# ------- Air Chef -------------------- %>
   <div class="card-wrap mt-5">
     <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
       <%= image_tag "airchef.png", class: "card-img" %>
@@ -190,10 +189,10 @@
         <li>Image Uploading</li>
         <li>Geocoding</li>
       </ul>
-
-
     </div>
   </div>
+
+  <%# ----------------   Festipal -------------------- %>
   <div class="card-wrap mt-5">
     <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
       <%= image_tag "festipal.png", class: "card-img" %>
@@ -236,6 +235,51 @@
 
     </div>
   </div>
+
+  <%# ---------------------  Dr. Sen -------------------- %>
+  <div class="card-wrap mt-5">
+    <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
+      <%= image_tag "dr-sen.png", class: "card-img" %>
+      <div class="card-body">
+        <h4><span class="spec-text card-title">Dr. Sen Portfolio</span></h4>
+        <a href="https://github.com/LyuboDias/db-DR" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
+        <a href="https://github.com/LyuboDias/db-DR" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
+        <p class="card-text">General Paediatric portfolio showcasing work, courses and shering relative information. </p>
+        <h5 class="spec-text">Project still under construction.</h5>
+        <h4>Technologies Used</h4>
+        <ul>
+          <li>Ruby on Rails</li>
+          <li>Sass</li>
+          <li>HTML5</li>
+          <li>Vanilla JS</li>
+          <li>AOS JS</li>
+          <li>Cloudinary</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-info" data-aos="fade-left" data-aos-duration="3000">
+      <h4><span class="spec-text">Goals</span></h4>
+
+      <p>Building personal portfolio for General Paeditrician. 
+      </p>
+
+      <h4><span class="spec-text">Notable Features</span></h4>
+
+      <ul style="list-style: none;">
+        <li>Embeds</li>
+        <li>FormSpree</li>
+        <li>AOS JS Library</li>
+      </ul>
+
+      <h4><span class="spec-text">My Solution</span></h4>
+
+      <p>Proffesional clean design, easy access to the menu and all information.</p>
+
+    </div>
+  </div>
+
+
+  <%# ---------------------  NCC -------------------- %>
   <div class="card-wrap mt-5">
     <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
       <%= image_tag "ncc.png", class: "card-img" %>
@@ -243,8 +287,8 @@
         <h4><span class="spec-text card-title">Nessy Creativity Crafts</span></h4>
         <a href="http://www.nessycreativitycrafts.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
         <a href="https://github.com/LyuboDias/NessyCreativityCrafts" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
-        <p class="card-text">Handmade Crafts, great gifts for special occasions.
-        <h5 class="spec-text">Project still under construction.</h5>  </p>
+        <p class="card-text">Handmade Crafts, great gifts for special occasions.</p>
+        <h5 class="spec-text">Project still under construction.</h5>  
         <h4>Technologies Used</h4>
         <ul>
           <li>Ruby on Rails</li>
@@ -270,11 +314,8 @@
         <li>Account Confirmation</li>
         <li>Payments</li>
       </ul>
-
       <h4><span class="spec-text">My Solution</span></h4>
-
       <p>Integrating Stripe payments. Using Devise An authentication gem for Rails.Mailer in Rails.</p>
-
     </div>
   </div>
 </div>
@@ -340,12 +381,13 @@
 <!-- ---contacts----- -->
 <div class="footer container mt-5 mb-5"  >
   <p class="text-center">© 2020 <span class="spec-text">db</span> WEB</p>
+    <%# -------- link to db MUSIC----------- %>
     <div class="by-hover1 db-music1 text-left">
         <%= link_to image_tag("db-music-trans.png", class: "db-web-logo by-hover1"), music_path %><p class="by-music1">by Antoan Dias</p>
     </div>
 </div>
 
-
+<%# ----mobile navbar------- %>
 <div class="mobile-navbar">
     <ul class="mobile-navbar-ul">
       <li class="mobile-navbar-li"><a href="#blog"><i class="fab fa-blogger-b"></i><br>Blog</a></li>
@@ -357,17 +399,21 @@
 </div>
 <%# ---------cookies modal------ %>
 
-<div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog " role="document">
-    <div class="modal-content">
-      <div class="modal-body ">
-        <div class="notice d-flex justify-content-around align-items-center ">
-          <div class="cookie-text">&nbsp; &nbsp; This website uses cookies to personalize content and analyse traffic in order to offer you a better experience.</div>
-          <div class="modal-buttons d-flex flex-column flex-lg-row">
-            <a href="#" class="btn btn-danger btn-sm" data-dismiss="modal">Accept</a>
-          </div>
-        </div>
+
+
+<%# <div id="cookiemodal" class="cookie-modal">
+  <div class="cookie-modal-container">
+    <div class="cookie-modal-container-content">
+      <div class="cookie-modal-container-content-text">
+        <p>By closing this banner, clicking a link or continuing to browse otherwise, you agree to the use of cookies.</p>
       </div>
+      <button id="cookieagree" class="cookie-modal-container-content-button">Accept</button>
+      <a href="https//www.db-uk.net/privacy-policy" class="cookie-modal-container-content-link">
+        <span>Privacy policy</span>
+      </a>
+      
     </div>
+    <div id="cookieclose" class="cookie-modal-container-close"></div>
   </div>
 </div>
+ %>
