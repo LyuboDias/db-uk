@@ -20,14 +20,8 @@ function closeOutside(e) {
     modal.style.display = "none";
   }
 }
-// ----coookie modal-----
-// function cookieagree() {
-//   document.getElementById("cookiemodal").remove();
-// }
+//---------- cookies modal------
 
-// function cookieclose() {
-//   document.getElementById("cookiemodal").remove();
-// }
-
-// document.getElementById("cookieagree").addEventListener("click", cookieagree);
-// document.getElementById("cookieclose").addEventListener("click", cookieclose);
+$(document).ready(function () {
+  $("#cookieModal").modal("show");
+});
