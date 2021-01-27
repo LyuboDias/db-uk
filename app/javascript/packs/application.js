@@ -25,7 +25,7 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-import "../components/modal.js";
+import "../components/modal";
 
 document.addEventListener("turbolinks:load", () => {
   // Call your functions here, e.g:
