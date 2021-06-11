@@ -15,8 +15,8 @@
 <div id="simpleModal" class="simpleModal">
     <div class="modalContent">
       <span id="closeBtn" class="closeBtn">+</span>
-        <%= image_tag "resume1.png"  %>
-        <%= image_tag "resume2.png"  %>
+        <%= image_tag "https://res.cloudinary.com/dxoo6hrvw/image/upload/v1623414765/db-uk/resume-1_f5y0ff.png"  %>
+        <%= image_tag "https://res.cloudinary.com/dxoo6hrvw/image/upload/v1623414765/db-uk/resume-2_tu7j2l.png"  %>
       <br>
       <%= link_to 'DOWNLOAD', 'Lyubomir-Dias-Resume.pdf', download: 'L.Dias-Resume.pdf', class: "text-center btn btn-primary" %>
     </div>
@@ -26,7 +26,7 @@
 
 <div class="wrap pb-5" data-aos="zoom-in" data-aos-duration="3000">
   <!-- -------main links---- -->
-  <div class="main-links" data-aos="fade-down" data-aos-duration="3000">
+  <div class="main-links1" data-aos="fade-down" data-aos-duration="3000">
     <ul>
       <li><a href="#blog">Blog</a></li>
       <li><a href="#bio">Bio</a></li>
@@ -77,10 +77,7 @@
     </h4>
     <br>
 
-    <%= image_tag "https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611886/ldias-certificate_pjlnsd.png", class: "le-wagon-img" %>
-    <br>
-    <br>
-    <h2>Contact me on <a href="https://www.fiverr.com/s2/19a4778329" class="spec-text" target="blank">Fiverr</a></h2>
+    <%= image_tag "https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611886/db-uk/ldias-certificate_pjlnsd.png", class: "le-wagon-img" %>
     <br>
     <br>
     <!-- ---fav resources---- -->
@@ -109,44 +106,9 @@
 
 <!-- ------projects------ -->
 
-<%# ------- Bisimpact -------------------- %>
-<div id="projects" class="p-5 projects ">
-  <h3 class="text-center p-5">Here are some projects I have worked on.</h3>
-  <div class="card-wrap mt-5">
-    <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
-      <%= image_tag "bisimpact.png", class: "card-img" %>
-      <div class="card-body">
-        <h4><span class="spec-text card-title">BisImpact</span></h4>
-        <a href="https://www.bisimpact.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
-        <a href="https://github.com/LyuboDias/db-impact" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
-        <p class="card-text">BisImpact is a website developed for a future social impact consultancy business. I co-built this with another graduate and is an example of me able to deliver a product for corporate use. This app has been optimised for all sizes of screens.</p>
-        <h4>Technologies Used</h4>
-        <ul>
-          <li>Ruby on Rails</li>
-          <li>SASS</li>
-          <li>HTML5</li>
-          <li>AOS JS Library</li>
-          <li>Cloudinary</li>
-        </ul>
-      </div>
-    </div>
-    <div class="project-info" data-aos="fade-left" data-aos-duration="3000">
-      <h4><span class="spec-text">Goals</span></h4>
-
-      <p>Accessible user interface.Easy to reach Information.Logical menus, a good amount of photos well distributed on the web app.</p>
-
-      <h4><span class="spec-text">Notable Features</span></h4>
-
-      <ul style="list-style: none;">
-        <li>Embeds</li>
-        <li>FormSpree</li>
-        <li>AOS JS Library</li>
-      </ul>
-      <h4><span class="spec-text">Solution</span></h4>
-      <p>Nice and clean design, tidy information accompanied by photos. Drop down navigation menu.</p>
-    </div>
-  </div>
-  <%# ------- Air Chef -------------------- %>
+  <h2 class="text-center"> <span class="spec-text">Projects</span>... </h2>
+  <br>
+<%# ------- Air Chef -------------------- %>
   <div class="card-wrap mt-5">
     <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
       <%= image_tag "airchef.png", class: "card-img" %>
@@ -154,14 +116,14 @@
         <h4><span class="spec-text card-title">AirChef</span></h4>
         <a href="http://airchef2020.herokuapp.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
         <a href="https://github.com/carabell94/AirChef" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
-        <p class="card-text">I was part of a team  that designed, implemented and shipped to production an AirBNB clone in one week time. This app is hosted on a Heroku Free Dyno Plan, meaning that on the initial load, the server may need to start which can cause a small delay of 15 - 20 seconds or so.</p>
+        <p class="card-text">I was part of a team of four  that designed, implemented and shipped to production an AirBNB clone in one week. This application is platform where users can browse through available chefs and book them for their events , at same time user can sign as a chef too.</p>
         <h4>Technologies Used</h4>
         <ul>
           <li>Ruby on Rails</li>
           <li>SASS</li>
           <li>HTML5</li>
           <li>PostgreSQL</li>
-          <li>Vanilla JS</li>
+          <li>JS</li>
           <li>Cloudinary</li>
         </ul>
       </div>
@@ -195,7 +157,7 @@
         <h4><span class="spec-text card-title">FestiPal</span></h4>
         <a href="http://www.yourfestipal.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
         <a href="https://github.com/carabell94/festipal" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
-        <p class="card-text"> This Project was build in the last weeks of the coding bootcamp. Web app that allow users to search and select festivals where they can create schedule/plan for it with the options to select day, artist, time and stage. Once user has created their plan can be downloaded. The app has been optimised for mobile screen as well as desktop.</p>
+        <p class="card-text"> This project was built in the last two weeks of the coding bootcamp. Festival is a web application that allow users to search and select festivals where they can create schedule/plan for it with the options to select day, artist, time and stage. Once a user has created their plan, they can then download it. The application has been optimised for mobile screen as well as desktop.</p>
         <h4>Technologies Used</h4>
         <ul>
           <li>Ruby on Rails</li>
@@ -228,6 +190,85 @@
 
       <p>Embedding social media shortcuts reflectin the festival that the user chooses, I have done the social media links, and used JS to add dynamic text on the main page. I did the rating and comment section as well as styling it. I have added a magnifying glass to the map photo. </p>
 
+    </div>
+  </div>
+
+    <%# ---------------------  NCC -------------------- %>
+  <div class="card-wrap mt-5">
+    <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
+      <%= image_tag "https://res.cloudinary.com/dxoo6hrvw/image/upload/v1623413912/NCC/Screenshot_2021-06-11_at_13.17.29_gebcor.png", class: "card-img" %>
+      <div class="card-body">
+        <h4><span class="spec-text card-title">Nessy Creativity Crafts</span></h4>
+        <a href="http://www.nessycreativitycrafts.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
+        <a href="https://github.com/LyuboDias/NessyCreativityCrafts" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
+        <p class="card-text">I am currently developing an E-commerce app with SMTP Mailing, Stripe payments and ActiveRecords. Working on admin panel, which will improve internal operating efficiency. </p>
+        <h5 class="spec-text">Project still under construction.</h5>
+        <h4>Technologies Used</h4>
+        <ul>
+          <li>Ruby on Rails</li>
+          <li>Sass</li>
+          <li>HTML5</li>
+          <li>PostgreSQL</li>
+          <li>JS</li>
+          <li>Cloudinary</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-info" data-aos="fade-left" data-aos-duration="3000">
+      <h4><span class="spec-text">Goals</span></h4>
+
+      <p>Building E-commerce, where the user will be able to log in, search through available items, filter them, save in basket, SMTP Mailing and make a Stripe payments.
+      </p>
+
+      <h4><span class="spec-text">Notable Features</span></h4>
+
+      <ul style="list-style: none;">
+        <li>Registration</li>
+        <li>Login</li>
+        <li>Account Confirmation</li>
+        <li>Payments</li>
+      </ul>
+      <h4><span class="spec-text">My Solution</span></h4>
+      <p>Integrating Stripe payments. Using Devise An authentication gem for Rails.Mailer in Rails.</p>
+    </div>
+  </div>
+</div>
+
+<%# ------- Bisimpact -------------------- %>
+<div id="projects" class="p-5 projects ">
+  <h3 class="text-center p-5">Here are some projects I have worked on.</h3>
+  <div class="card-wrap mt-5">
+    <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
+      <%= image_tag "bisimpact.png", class: "card-img" %>
+      <div class="card-body">
+        <h4><span class="spec-text card-title">BisImpact</span></h4>
+        <a href="https://www.bisimpact.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
+        <a href="https://github.com/LyuboDias/db-impact" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
+        <p class="card-text">BisImpact is a website developed for a future social impact consultancy business. I co-built this with another graduate. This app has been optimised for all sizes of screens with up to date technologies and frameworks.</p>
+        <h4>Technologies Used</h4>
+        <ul>
+          <li>Ruby on Rails</li>
+          <li>SASS</li>
+          <li>HTML5</li>
+          <li>JavaScript</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-info" data-aos="fade-left" data-aos-duration="3000">
+      <h4><span class="spec-text">Goals</span></h4>
+
+      <p>Accessible user interface.Easy to reach Information.Logical menus, a good amount of photos well distributed on the web app.</p>
+
+      <h4><span class="spec-text">Notable Features</span></h4>
+
+      <ul style="list-style: none;">
+        <li>Embeds</li>
+        <li>FormSpree</li>
+        <li>AOS JS Library</li>
+      </ul>
+      <h4><span class="spec-text">Solution</span></h4>
+      <p>Nice and clean design, tidy information accompanied by photos. Drop down navigation menu.</p>
     </div>
   </div>
 
@@ -272,52 +313,9 @@
 
     </div>
   </div>
-
-
-  <%# ---------------------  NCC -------------------- %>
-  <div class="card-wrap mt-5">
-    <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
-      <%= image_tag "ncc.png", class: "card-img" %>
-      <div class="card-body">
-        <h4><span class="spec-text card-title">Nessy Creativity Crafts</span></h4>
-        <a href="http://www.nessycreativitycrafts.com/" target="_blank"><i class="fas fa-tv"></i>Live Preview</a>
-        <a href="https://github.com/LyuboDias/NessyCreativityCrafts" target="_blank"><i class="fab fa-git-alt"></i>Source Code</a>
-        <p class="card-text">Developing an E-com platform that handles logins, filtering products, secure payments, buying and selling hand crafted goods.</p>
-        <h5 class="spec-text">Project still under construction.</h5>
-        <h4>Technologies Used</h4>
-        <ul>
-          <li>Ruby on Rails</li>
-          <li>Sass</li>
-          <li>HTML5</li>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Cloudinary</li>
-        </ul>
-      </div>
-    </div>
-    <div class="project-info" data-aos="fade-left" data-aos-duration="3000">
-      <h4><span class="spec-text">Goals</span></h4>
-
-      <p>Building E-commerce, where the user will be able to log in, search       through available items, filter them, save for late, add to basket, and make a payment.
-      </p>
-
-      <h4><span class="spec-text">Notable Features</span></h4>
-
-      <ul style="list-style: none;">
-        <li>Registration</li>
-        <li>Login</li>
-        <li>Account Confirmation</li>
-        <li>Payments</li>
-      </ul>
-      <h4><span class="spec-text">My Solution</span></h4>
-      <p>Integrating Stripe payments. Using Devise An authentication gem for Rails.Mailer in Rails.</p>
-    </div>
-  </div>
-</div>
-<br>
-<h3 class="text-center">Contact me on <a href="https://www.fiverr.com/s2/19a4778329" class="spec-text" target="blank">Fiverr</a></h3>
-<br>
-<br>
+  <br>
+  <br>
+  <br>
 <!-- -----BLOG------------------ -->
 <div id="blog" class="blog p-2" data-aos="zoom-out" data-aos-duration="3000" >
   <div class="container p-2">
