@@ -91,6 +91,7 @@ export default class Visualizer extends Component {
           </button>
         </div>
         <div className="grid">
+          <p className=".text-danger"> testing</p>
           {grid.map((row, rowIdx) => {
             return (
               <div key={rowIdx}>
