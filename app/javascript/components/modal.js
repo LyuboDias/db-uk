@@ -22,6 +22,6 @@ function closeOutside(e) {
 }
 //---------- cookies modal------
 
-$(document).ready(function () {
-  $("#cookieModal").modal("show");
-});
+// $(document).ready(function () {
+//   $("#cookieModal").modal("show");
+// });

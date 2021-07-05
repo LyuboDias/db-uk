@@ -1,5 +1,5 @@
 <!-- --back to the top-------- -->
-<a href="#" class="back-to-top"><i class="fas fa-level-up-alt"></i></a>
+<a onclick="window.location.hash='scrollingText';" class="back-to-top"><i class="fas fa-level-up-alt"></i></a>
 
 <!-- ----------scrolling text------ -->
 <div class="text-wrap">
@@ -26,22 +26,22 @@
 
 <div class="wrap pb-5" data-aos="zoom-in" data-aos-duration="3000">
   <!-- -------main links---- -->
-  <div class="main-links1" data-aos="fade-down" data-aos-duration="3000">
+  <div class="main-links1 mb-5" data-aos="fade-down" data-aos-duration="3000">
     <ul>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#bio">Bio</a></li>
+      <li><a onclick="window.location.hash='blog';">Blog</a></li>
+      <li><a onclick="window.location.hash='bio';">Bio</a></li>
       <li><a class="modalBtn" id="modalBtn">Resume</a></li>
-      <li><a href="#projects" >Projects</a></li>
-      <li><a href="#contacts">Contacts</a></li>
+      <li><a onclick="window.location.hash='myProjects';">Projects</a></li>
+      <li><a onclick="window.location.hash='contacts';">Contacts</a></li>
     </ul>
   </div>
 
   <h1 data-aos="flip-left"
   data-aos-easing="ease-out-cubic"
-  data-aos-duration="2000"><strong>db</strong></h1>
+  data-aos-duration="2000"><strong>Lyubo Dias</strong></h1>
   <div id="app">
     <div id="wrapper">
-      <h1 class="glitch web" data-text="web">web</h1>
+      <h1 class="glitch web" data-text="web &nbsp; dev">web &nbsp; dev</h1>
     </div>
   </div>
   <!-- social links -->
@@ -106,8 +106,17 @@
 
 <!-- ------projects------ -->
 
-  <h2 class="text-center"> <span class="spec-text">Projects</span>... </h2>
+  <h2 class="text-center" id="myProjects"> <span class="spec-text">Projects</span>... </h2>
   <br>
+  <br>
+  <h4 class="text-center">Visualized <span class="spec-text">Pathfinding</span> Algorithm </h4>
+  <br>
+  <p class="text-center">Click and drag anywhere on the grid to place police officers,<br> when   you ready press "Get the money!" and see if the thief would manage to reach the cash.
+  <br>
+        ( powered by Dijkstra )
+  </p>
+  <%#<div id="root" class="react-div mt-5"></div>
+  <br>%>
 <%# ------- Air Chef -------------------- %>
   <div class="card-wrap mt-5">
     <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
@@ -235,8 +244,7 @@
 </div>
 
 <%# ------- Bisimpact -------------------- %>
-<div id="projects" class="p-5 projects ">
-  <h3 class="text-center p-5">Here are some projects I have worked on.</h3>
+<div id="projects" class="p-1 projects ">
   <div class="card-wrap mt-5">
     <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
       <%= image_tag "bisimpact.png", class: "card-img" %>
@@ -372,7 +380,7 @@
 <div class="div-to-music text-center pt-5">
   <%= link_to image_tag("db-music-trans.png", class: "link-to-music"), music_path %>
   <p class="blue">by Antoan Dias</p>
-</div>
+</div> 
 
 
 
@@ -380,9 +388,9 @@
 <div class="footer container mt-5 mb-5"  >
   <p class="text-center">© 2020 <span class="spec-text">db</span> WEB</p>
     <%# -------- link to db MUSIC----------- %>
-    <div class="by-hover1 db-music1 text-left">
-        <%= link_to image_tag("db-music-trans.png", class: "db-web-logo by-hover1"), music_path %><p class="by-music1">by Antoan Dias</p>
-    </div>
+    <%#<div class="by-hover1 db-music1 text-left">
+        <%= link_to image_tag("db-music-trans.png", class: "db-web-logo by-hover1"), music_path %><%#<p class="by-music1">by Antoan Dias</p>
+    </div>%>
 </div>
 
 <%# ----mobile navbar------- %>

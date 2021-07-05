@@ -171,8 +171,8 @@ body {
 }
 // ------------banner-------------
 .wrap {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding-keyboard_yclssh.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/db-uk/coding-keyboard_yclssh.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -182,7 +182,7 @@ body {
   text-align: center;
   width: 100%;
   h1 {
-    font-size: 12em;
+    font-size: 7em;
     font-family: "Audiowide", cursive;
     color: $red;
   }
@@ -422,12 +422,13 @@ skew to change the 'thickness' of the glitch.*/
 // ----------BLOG-------------------
 
 .blog {
-  // background-attachment: fixed;
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611882/coding2_yp96x4.jpg");
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611884/db-uk/coding-laptop_xqz0gt.jpg");
   height: 100%;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: block;
   justify-content: center;
   align-items: center;
@@ -440,13 +441,13 @@ skew to change the 'thickness' of the glitch.*/
 // -----------------BIO--------------------
 
 .bio {
-  // background-attachment: fixed;
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  //   url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611885/coding-background_ygn01x.jpg");
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("https://res.cloudinary.com/dxoo6hrvw/image/upload/v1602611885/db-uk/coding-background_ygn01x.jpg");
   height: 100vh;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
