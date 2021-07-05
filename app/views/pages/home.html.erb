@@ -2,7 +2,7 @@
 <a onclick="window.location.hash='scrollingText';" class="back-to-top"><i class="fas fa-level-up-alt"></i></a>
 
 <!-- ----------scrolling text------ -->
-<div class="text-wrap">
+<div class="text-wrap" id="scrollingText">
     <div class="marquee">
       <p> <%= image_tag "rails-logo.png", class: "rails-logo" %> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i> <i class="fab fa-react"></i> <i class="fab fa-sass"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-js"></i> <i class="fab fa-git"></i> <i class="fab fa-github-alt"></i>  SQL </p>
     </div>
@@ -105,7 +105,7 @@
 </div>
 
 <!-- ------projects------ -->
-
+  <br>
   <h2 class="text-center" id="myProjects"> <span class="spec-text">Projects</span>... </h2>
   <br>
   <br>
@@ -115,8 +115,8 @@
   <br>
         ( powered by Dijkstra )
   </p>
-  <%#<div id="root" class="react-div mt-5"></div>
-  <br>%>
+  <div id="root" class="react-div mt-5"></div>
+  <br>
 <%# ------- Air Chef -------------------- %>
   <div class="card-wrap mt-5">
     <div class="card" style="width: 40%;" data-aos="fade-right" data-aos-duration="3000">
