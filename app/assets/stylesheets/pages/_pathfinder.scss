@@ -16,15 +16,20 @@
   color: white;
   margin-top: 10px;
   border-radius: 5px;
-  /* &:hover {
+  &:hover {
     cursor: pointer;
-  } */
+  }
 }
 
 .node {
   width: 28px;
   height: 28px;
   outline: 1px solid rgb(241, 240, 240);
+}
+
+.grid {
+  margin: 20px auto;
+  display: flex;
 }
 
 .node-finish {

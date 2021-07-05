@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Node from "./node/node";
 import { dijkstra, getNodesInShortestPathOrder } from "../algorithm/dijkstra";
 
-import "./visualizer.css";
+// import "./visualizer.css";
 
 const START_NODE_ROW = 10;
 const START_NODE_COL = 11;
