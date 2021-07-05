@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Node from "./node/node";
 import { dijkstra, getNodesInShortestPathOrder } from "../algorithm/dijkstra";
 
-import "./visualizer.scss";
+import "./visualizer.css";
 
 const START_NODE_ROW = 10;
 const START_NODE_COL = 11;
@@ -91,7 +91,6 @@ export default class Visualizer extends Component {
           </button>
         </div>
         <div className="grid">
-          <p className=".text-danger"> testing</p>
           {grid.map((row, rowIdx) => {
             return (
               <div key={rowIdx}>
